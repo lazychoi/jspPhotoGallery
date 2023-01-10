@@ -32,10 +32,13 @@ input[type=text]:focus, input[type=password]:focus {
   }
 .btn:hover { background-color: rgb(255, 251, 1); }
 
+.survey,
 .signin { font-size: 2rem; 
-    position: absolute; transform: rotate(13deg); right: 450px; bottom: 230px; 
+    position: absolute; transform: rotate(13deg); right: 470px; bottom: 230px; 
 }
-.signin:hover { color: white; text-shadow: 2px 2px 4px #7e6c1a; }
+.survey:hover, .signin:hover { color: white; text-shadow: 2px 2px 4px #7e6c1a; }
+.survey { right: 450px; bottom: 300px; }
+
 
 table { border-collapse: collapse; margin: auto; width: 100%;}
 td, th {border: 1px solid #b7b7b7; padding: 8px 20px;}

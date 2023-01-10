@@ -20,16 +20,14 @@ if (session.getAttribute("id") != null ){
 	<div class="gallery" style=" width: 80%; display:flex; flex-wrap: wrap; padding: 0 4px; margin:auto;">
 		<% out.print(ba.makeList());  %> 
 	</div>
-	
-<%
-} else {
-%>
-	<script>	
+
+<%}else { %>
+
+	<script>
 		alert("로그인 상태가 아닙니다.");
 		location.href="index.html";
 	</script>
-<%
-}
-%>
+	
+<% } %>
 </body>
 </html>

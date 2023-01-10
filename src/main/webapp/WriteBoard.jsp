@@ -24,9 +24,9 @@ boardDTO bt = new boardDTO();
 int lastNum = ba.getLastNum();     // DB의 마지막 번호 가져오기
 
 String updir = application.getRealPath("/upload/"); // /upload/ 폴더 안에 글번호 별로 폴더를 만들어 파일 저장
-//String updir = "/Users/jun/upload/"+ (lastNum+1) + "/";
-File targetDir = new File(updir);
-if(!targetDir.exists()) { targetDir.mkdirs(); }
+
+//File targetDir = new File(updir);
+//if(!targetDir.exists()) { targetDir.mkdirs(); }
 int maxSize = 1024 * 1024 * 500;
 String encoding = "utf-8";
 
@@ -43,10 +43,6 @@ if(files.hasMoreElements())
 	fileSystemName = multipartRequest.getFilesystemName(element);
 }
 
-
-//String fileRealname = (lastNum+1) + "++" + multipartRequest.getFilesystemName("file");
-//String filename = (lastNum+1) + "++" + multipartRequest.getOriginalFileName("file");
- 
 
 System.out.println("originalFilename => " + originalFilename);
 System.out.println("fileSystemName => " + fileSystemName);

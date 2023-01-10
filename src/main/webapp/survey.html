@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>설문 조사</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container"><div style="margin: 100px 0 0 300px;">
+
+<form action="Survey.jsp" method="post">
+<H2>인적 사항</H2>
+이름: <input type="text" name="name"><br>
+성별: <input type="text" name="gender"><br>
+나이: <input type="text" name="age"><br>
+
+<h2>설문 시작</h2>
+<p>Q1. 이 사이트가 얼마나 마음에 드나요?</p>
+<input type="radio" name="q1" value="q11">전혀 마음에 안 든다
+<input type="radio" name="q1" value="q12">조금 마음에 안 든다
+<input type="radio" name="q1" value="q13">보통이다
+<input type="radio" name="q1" value="q14">조금 마음에 든다
+<input type="radio" name="q1" value="q15">아주 마음에 든다
+
+<p>Q2. 가장 마음에 드는 기능은 무엇인가요?</p>
+<input type="radio" name="q2" value="q21">회원가입
+<input type="radio" name="q2" value="q22">사진갤러리
+<input type="radio" name="q2" value="q23">글쓰기
+<input type="radio" name="q2" value="q24">글 수정하기
+<input type="radio" name="q2" value="q25">글 삭제하기
+<p></p>
+<input type="submit" value="확인"> <input type="reset" value="취소">
+</form>
+</div></div>
+</body>
+</html>
