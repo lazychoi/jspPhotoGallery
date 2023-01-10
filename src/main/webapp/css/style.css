@@ -1,0 +1,79 @@
+html, body {height: 100vh; background-color: cadetblue;}
+* {box-sizing: border-box; text-decoration: none; list-style: none; }
+
+container { width: 100vw; height: 100vh; 
+            display: flex; justify-content: center; align-items:center;
+}
+
+.box {width: 800px; height: 650px; margin: auto;}
+
+h2 { margin: 25px 0 10px 0; }
+
+#bg-img {  position: relative; margin: 0 auto; width: 800px; height: 650px;
+           background-image: url("../images/login.jpg"); background-size: cover;
+           background-position: center; background-origin: border-box; background-repeat: no-repeat;
+           box-shadow: 0px 0px 20px rgb(33, 30, 7);
+}
+
+.login-container { position: absolute; right: 0; margin: 10px; max-width: 300px; padding: 5px;
+                    transform: rotate(-10deg); position: relative; left: 170px; top: 150px; 
+}
+
+input[type=text], input[type=password] {
+    width: 180px; padding: 9px; margin: 5px 0 7px 0; border: none; background: #f1f1f1;
+}
+    
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd; outline: none;
+}
+
+.btn { background-color: #73ff00; color: rgb(141, 141, 141); padding: 10px 10px; border: none;
+    font-size: 0.8rem; cursor: pointer; width: 180px; opacity: 0.9;
+  }
+.btn:hover { background-color: rgb(255, 251, 1); }
+
+.signin { font-size: 2rem; 
+    position: absolute; transform: rotate(13deg); right: 450px; bottom: 230px; 
+}
+.signin:hover { color: white; text-shadow: 2px 2px 4px #7e6c1a; }
+
+table { border-collapse: collapse; margin: auto; width: 100%;}
+td, th {border: 1px solid #b7b7b7; padding: 8px 20px;}
+
+
+.user { font-size: 1.5rem; text-align: right; background: #80c9cb; padding: 0.1rem;
+        box-shadow: 3px 3px 3px rgb(67, 111, 113); margin: 0 0 1rem 0;
+}
+.logout {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.logout:hover { box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+#heart {
+    color: red;
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+#heart:hover { color: orange; }
